@@ -1,5 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
 .map {
   width: 768px;
   height: 576px;
-  background: url("img/bg.gif");
+  background: url("../img/bg.gif");
+  border: 1px solid rgb(54, 45, 31);
+  box-sizing: content-box;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid__block {
+  height: 64px;
+  width: 64px;
+  background: rgba(54, 45, 31, 0.8);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(49, 39, 24, 0.5);
+}
+
+.grid__block:not(.unlocked):hover {
+  background: rgba(54, 45, 31, 0.6);
+}
+
+.unlocked {
+  background: rgba(54, 45, 31, 0);
 }
