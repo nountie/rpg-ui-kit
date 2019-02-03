@@ -7,7 +7,9 @@ body {
   margin: 0;
 }
 body {
-  background: #383a3e;
+  background: #2c313a;
+  /* background: #383a3e; */
+  /* #4c73bf */
   /* background-image: url("../img/bg-pattern.jpg"); */
 }
 .header {
@@ -23,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Lusitana";
+  font-family: "Martel";
 }
 .brand {
   font-size: 30px;
@@ -122,7 +124,7 @@ body {
   color: #fff;
 }
 .panel__title {
-  font: 18px "Lusitana";
+  font: 18px "Martel";
   color: #e3d2bc;
   font-weight: 700;
   margin: 0;
