@@ -7,13 +7,16 @@ body {
   margin: 0;
 }
 body {
-  background: #2c313a;
+  background: #1a1d23;
+  /* background: #2c313a; */
   /* background: #383a3e; */
   /* #4c73bf */
   /* background-image: url("../img/bg-pattern.jpg"); */
 }
 .header {
-  background: #1a1a20;
+  /* background: #1a1a20; */
+  background: #12161d;
+  border-bottom: 1px solid #101115;
   padding: 0 30px;
   box-shadow: 0px 0px 0px 1px #060c0fbd;
   height: 80px;
@@ -131,7 +134,7 @@ body {
   position: absolute;
   bottom: 10px;
   left: 0px;
-  box-shadow: inset 0px -41px 46px -7px #2c313a;
+  box-shadow: inset 0px -41px 46px -7px #1a1d23;
 }
 /* .panel::before {
   width: calc(100% - 20px);
@@ -177,9 +180,11 @@ body {
 
 
 .task {
-  background: #202129;
+  /* background: #202129; */
+  background: #25262f;
   margin: 0px 15px 12px 5px;
-  box-shadow: 0px 1px 0px 1px #101317;
+  /* box-shadow: 0px 1px 0px 1px #101317; */
+  box-shadow: 0px 1px 0px 1px #11121f;
   border-radius: 3px;
   padding: 10px 15px;
   min-height: 70px;
