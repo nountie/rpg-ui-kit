@@ -125,12 +125,12 @@ body {
 .panel::after {
   content: "";
   display: block;
-  height: 45px;
+  height: 58px;
   width: calc(100% - 20px);
   position: absolute;
   bottom: 10px;
   left: 0px;
-  box-shadow: inset 0px -41px 50px -5px #2c313a;
+  box-shadow: inset 0px -41px 46px -7px #2c313a;
 }
 /* .panel::before {
   width: calc(100% - 20px);
@@ -148,8 +148,14 @@ body {
   }
 }
 /* width */
+.panel:hover .tasks::-webkit-scrollbar-thumb {
+  background: #202129;
+  border: 1px solid #14151a;
+}
+
 .tasks::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
+  transition: all 0.3s linear;
 }
 
 /* Track */
@@ -159,7 +165,7 @@ body {
  
 /* Handle */
 .tasks::-webkit-scrollbar-thumb {
-  background: #202129; 
+  background: rgba(0,0,0,0); 
   border-radius: 8px;
 }
 
