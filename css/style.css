@@ -30,6 +30,7 @@ body {
 .brand {
   font-size: 30px;
   font-weight: 900;
+  height: 100%;
 }
 .brand span {
   font-size: 18px;
