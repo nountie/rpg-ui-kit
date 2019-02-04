@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #1a1d23;
+  /* background: #2c313a; */
+  /* background: #383a3e; */
+  /* #4c73bf */
+  /* background-image: url("../img/bg-pattern.jpg"); */
+}
+.header {
+  /* background: #1a1a20; */
+  background: #12161d;
+  border-bottom: 1px solid #101115;
+  padding: 0 30px;
+  box-shadow: 0px 0px 0px 1px #060c0fbd;
+  height: 80px;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Martel";
+}
+.brand {
+  font-size: 30px;
+  font-weight: 900;
+  height: 100%;
+}
+.brand span {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.menu__list {
+  list-style: none;
+}
+.menu__list li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.map {
+  width: 768px;
+  height: 576px;
+  background: url("../img/bg.gif");
+  box-sizing: content-box;
+  position: relative;
+  margin: 15px;
+  border: 4px solid rgb(24, 17, 2);
+  box-shadow: 0px 0px 76px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  flex: 0 0 768px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(92, 92, 92, 0.2) 47%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(92, 92, 92, 0.4) 47%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+.grid__block {
+  height: 64px;
+  width: 64px;
+  background: #1e1f26b3;
+  transition: all 0.3s ease;
+  border: 1px solid #1e1f2682;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.grid__block:not(.unlocked):hover {
+  background: rgba(54, 45, 31, 0.5);
+  border: 1px solid rgba(34, 27, 12, 1);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.unlocked {
+  background: rgba(54, 45, 31, 0);
+}
+.dashboard {
+  padding-top: 80px;
+}
+.dashboard > .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 1535px) {
+  .dashboard > .row {
+  }
+}
+
+.row {
+  margin: 15px;
+}
+.panel {
+  /* background: #292d36;
+  border: 1px solid rgb(37, 41, 49); */
+  border-radius: 3px;
+  padding: 12px;
+  margin: 15px;
+  min-width: 320px;
+  max-width: calc(100% - 836px);
+  flex-grow: 1;
+  flex-basis: auto;
+  position: relative;
+}
+.panel .tasks {
+  height: 542px;
+  overflow: auto;
+  padding: 5px 0 30px;
+}
+.panel::after {
+  content: "";
+  display: block;
+  height: 58px;
+  width: calc(100% - 20px);
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  box-shadow: inset 0px -41px 46px -7px #1a1d23;
+}
+/* .panel::before {
+  width: calc(100% - 20px);
+  content: "";
+  display: block;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  box-shadow: inset 0px 31px 30px -21px #2b3038;
+} */
+@media (min-width: 1535px) {
+  .panel {
+    max-width: calc(50% - 458px);
+  }
+}
+/* width */
+.panel:hover .tasks::-webkit-scrollbar-thumb {
+  background: #25262f;
+  border: 1px solid #09090c;
+}
+
+.tasks::-webkit-scrollbar {
+  width: 7px;
+  transition: all 0.3s linear;
+}
+
+/* Track */
+.tasks::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+.panel:hover .tasks::-webkit-scrollbar-track {
+  background: #15161b;
+  border-radius: 4px;
+}
+
+/* Handle */
+.tasks::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+.tasks::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.task__heading {
+  font: 13px "Open Sans";
+  font-weight: 400;
+  margin: 0;
+  color: #e3d2bc;
+}
+.task__content {
+  font: 11px "Open Sans";
+  color: #fff;
+}
+.panel__title {
+  font: 18px "Martel";
+  color: #e3d2bc;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 10px;
+  text-shadow: 1px 2px 1px #101115, 1px 2px 1px #101115;
+}
+
+.task {
+  /* background: #202129; */
+  background: #25262f;
+  margin: 0px 15px 12px 5px;
+  /* box-shadow: 0px 1px 0px 1px #101317; */
+  box-shadow: 0px 1px 0px 1px #11121f;
+  border-radius: 3px;
+  padding: 10px 53px 10px 15px;
+  min-height: 70px;
+  position: relative;
+  &__checkbox {
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    background: #e3d2bc;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
