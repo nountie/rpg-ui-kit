@@ -8,6 +8,8 @@ body {
 }
 body {
   background: #1a1d23;
+  font-family: "Open Sans";
+  color: #fff;
   /* background: #2c313a; */
   /* background: #383a3e; */
   /* #4c73bf */
@@ -246,10 +248,10 @@ body {
 }
 .inventory {
   background: #25262f;
-  padding: 16px 14px;
   box-shadow: 0px 1px 0px 1px #11121f;
   border-radius: 3px;
   padding: 23px 16px 1px;
+  width: 320px;
   // .row {
   //   &:nth-child(even) {
   //     position: relative;
@@ -267,6 +269,11 @@ body {
   border-radius: 10px;
   border: 1px solid #101115;
   position: relative;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #5e6277;
+    cursor: pointer;
+  }
   &.is-wearing {
     background: #55719c;
     border: 1px solid #0c121b;
@@ -303,7 +310,87 @@ body {
   }
 }
 
-#pentagon {
+.inventory-preview {
+  margin: 15px 0;
+  width: 320px;
+  background: #25262f;
+  padding: 9px;
+  box-shadow: 0px 1px 0px 1px #11121f;
+  border-radius: 3px;
+  display: flex;
+  &__image {
+    flex: 0 0 90px;
+    height: 90px;
+    background: #e3d2bc;
+    border-radius: 4px;
+    border: 1px solid #978977;
+    padding: 13px;
+    &::after {
+      content: "";
+      display: block;
+      width: 46px;
+      height: 0px;
+      position: absolute;
+      left: 42px;
+      box-shadow: 0 -8px 23px 6px rgb(134, 115, 90);
+      animation: inventoryPreviewItemShadow 1.5s ease-in-out 1.5s infinite
+        alternate;
+      opacity: 0.5;
+      z-index: 1;
+    }
+    img {
+      transform: translateY(-7px);
+      z-index: 999;
+      position: relative;
+      animation: inventoryPreviewItem 1.5s ease-in-out 1.5s infinite alternate;
+    }
+  }
+  &__info {
+    padding: 1px 18px 8px;
+  }
+  &__name {
+    font: 700 14px "Open Sans";
+    margin: 0;
+  }
+  &__description {
+    font-size: 12px;
+    margin: 7px 0;
+    color: #e3d2bc;
+  }
+  &__stats {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font: 500 12px "Open Sans";
+    b {
+      font-weight: 500;
+    }
+    span {
+      &.positive {
+        color: #559c73;
+      }
+      font-weight: 900;
+      & + span {
+        font-size: 10px;
+      }
+    }
+  }
 }
-#pentagon:before {
+
+@keyframes inventoryPreviewItem {
+  0% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+@keyframes inventoryPreviewItemShadow {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
