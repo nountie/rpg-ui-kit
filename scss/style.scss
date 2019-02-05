@@ -39,12 +39,14 @@ body {
   font-size: 18px;
   letter-spacing: 2px;
 }
-.menu__list {
-  list-style: none;
-}
-.menu__list li {
-  display: inline-block;
-  margin: 0 15px;
+.menu {
+  &__list {
+    list-style: none;
+  }
+  &__list li {
+    display: inline-block;
+    margin: 0 15px;
+  }
 }
 
 .map {
@@ -74,20 +76,19 @@ body {
     rgba(92, 92, 92, 0.4) 47%,
     rgba(0, 0, 0, 0.4) 100%
   );
-}
-.grid__block {
-  height: 64px;
-  width: 64px;
-  background: #1e1f26b3;
-  transition: all 0.3s ease;
-  border: 1px solid #1e1f2682;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-}
-
-.grid__block:not(.unlocked):hover {
-  background: rgba(54, 45, 31, 0.5);
-  border: 1px solid rgba(34, 27, 12, 1);
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  &__block {
+    height: 64px;
+    width: 64px;
+    background: #1e1f26b3;
+    transition: all 0.3s ease;
+    border: 1px solid #1e1f2682;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    &:not(.unlocked):hover {
+      background: rgba(54, 45, 31, 0.5);
+      border: 1px solid rgba(34, 27, 12, 1);
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 .unlocked {
@@ -182,16 +183,6 @@ body {
   background: #555;
 }
 
-.task__heading {
-  font: 13px "Open Sans";
-  font-weight: 400;
-  margin: 0;
-  color: #e3d2bc;
-}
-.task__content {
-  font: 11px "Open Sans";
-  color: #fff;
-}
 .panel__title {
   font: 18px "Martel";
   color: #e3d2bc;
@@ -216,6 +207,7 @@ body {
     width: 32px;
     border-radius: 4px;
     background: #e3d2bc;
+    box-shadow: 1px 1px 1px 1px rgb(140, 117, 87);
     position: absolute;
     top: 10px;
     right: 10px;
@@ -239,6 +231,42 @@ body {
           transform: scale(1) rotate(0deg);
         }
       }
+    }
+  }
+  &__content {
+    font: 11px "Open Sans";
+    color: #fff;
+  }
+  &__heading {
+    font: 13px "Open Sans";
+    font-weight: 400;
+    margin: 0;
+    color: #e3d2bc;
+  }
+}
+.inventory {
+  background: #25262f;
+  padding: 16px 14px;
+  box-shadow: 0px 1px 0px 1px #11121f;
+  border-radius: 3px;
+}
+
+.item {
+  background: #3b3d4a;
+  display: inline-block;
+  margin: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  border: 1px solid #101115;
+  &__img {
+    width: 48px;
+    margin-left: -4px;
+    margin-top: -4px;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0px);
+    &:hover {
+      transform: translateY(-5px);
     }
   }
 }
