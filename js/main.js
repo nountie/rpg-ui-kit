@@ -41,7 +41,10 @@
       "click",
       e => {
         e.target.classList.toggle("unlocked");
-        tilemap.array[e.target.offsetTop / 64][e.target.offsetLeft / 64] = 1;
+        const x = e.target.offsetLeft / 64,
+          y = e.target.offsetTop / 64;
+        if (tilemap.array[y][x] == 0) tilemap.array[y][x] = 1;
+        else tilemap.array[y][x] = 0;
         localStorage.setItem("tilemap", JSON.stringify(tilemap.array));
       },
       true
