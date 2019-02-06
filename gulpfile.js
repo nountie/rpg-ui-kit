@@ -20,7 +20,7 @@ gulp.task("sass", function() {
 
 gulp.task("watch", function() {
   gulp.watch("./scss/**/*.scss", ["sass"]);
-  gulp.watch(["./*.html", "./**/*.js"]).on("change", browserSync.reload);
+  gulp.watch(["./index.html", "./js/*.js"]).on("change", browserSync.reload);
 });
 
 gulp.task("browser-sync", function() {
