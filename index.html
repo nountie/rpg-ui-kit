@@ -1,630 +1,460 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>RPGoals v.0.0.1</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Martel:200,300,400,600,700,800,900&amp;subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="brand"><img src="img/logos.png" alt="" /></div>
-      <div class="menu">
-        <ul class="menu__list">
-          <li>lorem 1</li>
-          <li>lorem 2</li>
-          <li>lorem 3</li>
-        </ul>
-      </div>
-    </header>
-    <main class="dashboard">
-      <div class="row">
-        <div id="map" class="map">
-          <div class="grid">
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-            <div class="grid__block"></div>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="panel__title-outer">
-            <img class="icon icon__stoper" src="img/stopwatch.svg" alt="" />
-            <h2 class="panel__title">Today</h2>
-          </div>
-          <div class="tasks">
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <input
-                id="task1"
-                class="task__inputCheckbox"
-                type="checkbox"
-                name="taskSuccess"
-              />
-              <label for="task1" class="task__checkbox"></label>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>RPGoals v.0.0.1</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Martel:200,300,400,600,700,800,900&amp;subset=latin-ext" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <header class="header">
+            <div class="brand"><img src="img/logos.png" alt=""/></div>
+            <div class="menu">
+                <ul class="menu__list">
+                    <li>lorem 1</li>
+                    <li>lorem 2</li>
+                    <li>lorem 3</li>
+                </ul>
             </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
-                rem!
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Exercitationem, modi accusantium!
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                omnis facilis sapiente similique incidunt.
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                eius culpa error dolores commodi perspiciatis corporis.
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="panel__title-outer">
-            <img class="icon icon__backpack" src="img/bag-sword.svg" alt="" />
-            <h2 class="panel__title">Inventory</h2>
-          </div>
-          <div class="inventory">
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/weapons/Weapon_01.png"
-                alt=""
-              />
-              <div class="item__quantity">8</div>
-            </div>
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/weapons/Weapon_02.png"
-                alt=""
-              />
-              <div class="item__quantity">3</div>
-            </div>
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/weapons/Weapon_03.png"
-                alt=""
-              />
-            </div>
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/weapons/Weapon_04.png"
-                alt=""
-              />
-              <div class="item__quantity">2</div>
-            </div>
-            <div class="item is-wearing">
-              <img
-                class="item__img"
-                src="img/items/weapons/Weapon_05.png"
-                alt=""
-              />
-            </div>
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/weapons/Weapon_06.png"
-                alt=""
-              />
-            </div>
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/weapons/Weapon_07.png"
-                alt=""
-              />
-              <div class="item__quantity">2</div>
-            </div>
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/potions/Potion_10.png"
-                alt=""
-              />
-              <!-- <div class="item__quantity" data-quanity="1">1</div> -->
-            </div>
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/potions/Potion_18.png"
-                alt=""
-              />
-              <div class="item__quantity">3</div>
-            </div>
-            <div class="item">
-              <img
-                class="item__img"
-                src="img/items/potions/Potion_19.png"
-                alt=""
-              />
-              <div class="item__quantity">6</div>
-            </div>
-            <div class="item">
-              <img class="item__img" src="img/items/food/Food_34.png" alt="" />
-              <div class="item__quantity">11</div>
-            </div>
-            <div class="item is-wearing">
-              <img
-                class="item__img"
-                src="img/items/armor/Armor_03.png"
-                alt=""
-              />
-            </div>
-            <div class="item is-wearing">
-              <img
-                class="item__img"
-                src="img/items/shields/Shield_02.png"
-                alt=""
-              />
-              <div class="item__quantity">2</div>
-            </div>
-            <div class="item">
-<<<<<<< HEAD
-              <img
-                class="item__img"
-                src="img/items/shields/Shield_04.png"
-                alt=""
-              />
-=======
-              <img class="item__img" src="img/items/shields/Shield_04.png" alt="" />
+        </header>
+        <main class="dashboard">
+            <div class="row">
+                <div id="map" class="map">
+                    <div class="grid">
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                        <div class="grid__block"></div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel__title-outer">
+                        <img class="icon icon__stoper" src="img/stopwatch.svg" alt=""/>
+                        <h2 class="panel__title">Today</h2>
+                    </div>
+                    <div class="tasks">
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <input id="task1" class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            <label for="task1" class="task__checkbox"></label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, rem!
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, modi accusantium!
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis facilis sapiente similique incidunt.
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi eius culpa error dolores commodi perspiciatis corporis.
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel__title-outer">
+                        <img class="icon icon__backpack" src="img/bag-sword.svg" alt=""/>
+                        <h2 class="panel__title">Inventory</h2>
+                    </div>
+                    <div class="inventory">
+                        <div class="item">
+                            <img class="item__img" src="img/items/weapons/Weapon_01.png" alt=""/>
+                            <div class="item__quantity">8</div>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/weapons/Weapon_02.png" alt=""/>
+                            <div class="item__quantity">3</div>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/weapons/Weapon_03.png" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/weapons/Weapon_04.png" alt=""/>
+                            <div class="item__quantity">2</div>
+                        </div>
+                        <div class="item is-wearing">
+                            <img class="item__img" src="img/items/weapons/Weapon_05.png" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/weapons/Weapon_06.png" alt=""/>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/weapons/Weapon_07.png" alt=""/>
+                            <div class="item__quantity">2</div>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/potions/Potion_10.png" alt=""/>
+                            <!-- <div class="item__quantity" data-quanity="1">1</div> -->
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/potions/Potion_18.png" alt=""/>
+                            <div class="item__quantity">3</div>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/potions/Potion_19.png" alt=""/>
+                            <div class="item__quantity">6</div>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/food/Food_34.png" alt=""/>
+                            <div class="item__quantity">11</div>
+                        </div>
+                        <div class="item is-wearing">
+                            <img class="item__img" src="img/items/armor/Armor_03.png" alt=""/>
+                        </div>
+                        <div class="item is-wearing">
+                            <img class="item__img" src="img/items/shields/Shield_02.png" alt=""/>
+                            <div class="item__quantity">2</div>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/shields/Shield_04.png" alt=""/>
 
->>>>>>> 13fde9e8acb134f5f68a08716fd8124688664873
+                        </div>
+                        <div class="item is-wearing">
+                            <img class="item__img" src="img/items/accesories/Accessory_08.png" alt=""/>
+                            <div class="item__quantity">2</div>
+                        </div>
+                        <div class="item">
+                            <img class="item__img" src="img/items/misc/Misc_66.png" alt=""/>
+                            <div class="item__quantity">2</div>
+                        </div>
+                    </div>
+                    <div class="inventory-preview">
+                        <div class="inventory-preview__image">
+                            <img src="img/items/weapons/Weapon_05.png" alt=""/>
+                        </div>
+                        <div class="inventory-preview__info">
+                            <h4 class="inventory-preview__name">Krwawy Egzekutor</h4>
+                            <p class="inventory-preview__description">
+                                Miecz prawdziwego wojownika z krwi i kości!
+                            </p>
+                            <ul class="inventory-preview__stats">
+                                <li>
+                                    <b>Hitpoints:
+                                    </b>
+                                    <span>70</span>
+                                </li>
+                                <li>
+                                    <b>Strength required:
+                                    </b>
+                                    <span class="positive">50
+                                    </span ><span class="positive">(65)</span>
+                                </li>
+                                <li>
+                                    <b>Value:
+                                    </b>
+                                    <span>1500</span>
+                                </li>
+                                <li>
+                                    <b>Bonus:
+                                    </b>
+                                    <span class="positive">+5% 1H</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel__title-outer">
+                        <img class="icon icon__calendar" src="img/calendar.svg" alt=""/>
+                        <h2 class="panel__title">Upcoming</h2>
+                    </div>
+                    <div class="tasks">
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, rem!
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, modi accusantium!
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis facilis sapiente similique incidunt.
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi eius culpa error dolores commodi perspiciatis corporis.
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h2 class="panel__title">Tasks</h2>
+                    <div class="tasks">
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, modi accusantium!
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis facilis sapiente similique incidunt.
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi eius culpa error dolores commodi perspiciatis corporis.
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h2 class="panel__title">Tasks</h2>
+                    <div class="tasks">
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deleniti?
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, rem!
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, modi accusantium!
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis facilis sapiente similique incidunt.
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <h3 class="task__heading">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi eius culpa error dolores commodi perspiciatis corporis.
+                            </h3>
+                            <label class="task__checkbox">
+                                <input class="task__inputCheckbox" type="checkbox" name="taskSuccess"/>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item is-wearing">
-              <img
-                class="item__img"
-                src="img/items/accesories/Accessory_08.png"
-                alt=""
-              />
-              <div class="item__quantity">2</div>
-            </div>
-            <div class="item">
-              <img class="item__img" src="img/items/misc/Misc_66.png" alt="" />
-              <div class="item__quantity">2</div>
-            </div>
-          </div>
-          <div class="inventory-preview">
-            <div class="inventory-preview__image">
-              <img src="img/items/weapons/Weapon_05.png" alt="" />
-            </div>
-            <div class="inventory-preview__info">
-              <h4 class="inventory-preview__name">Krwawy Egzekutor</h4>
-              <p class="inventory-preview__description">
-                Miecz prawdziwego wojownika z krwi i kości!
-              </p>
-              <ul class="inventory-preview__stats">
-                <li><b>Hitpoints: </b><span>70</span></li>
-                <li>
-                  <b>Strength required: </b><span class="positive">50 </span
-                  ><span class="positive">(65)</span>
-                </li>
-                <li><b>Value: </b><span>1500</span></li>
-                <li><b>Bonus: </b><span class="positive">+5% 1H</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="panel__title-outer">
-            <img class="icon icon__calendar" src="img/calendar.svg" alt="" />
-            <h2 class="panel__title">Upcoming</h2>
-          </div>
-          <div class="tasks">
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
-                rem!
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Exercitationem, modi accusantium!
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                omnis facilis sapiente similique incidunt.
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                eius culpa error dolores commodi perspiciatis corporis.
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="panel">
-          <h2 class="panel__title">Tasks</h2>
-          <div class="tasks">
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Exercitationem, modi accusantium!
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                omnis facilis sapiente similique incidunt.
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                eius culpa error dolores commodi perspiciatis corporis.
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="panel">
-          <h2 class="panel__title">Tasks</h2>
-          <div class="tasks">
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-                deleniti?
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
-                rem!
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Exercitationem, modi accusantium!
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                omnis facilis sapiente similique incidunt.
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-            <div class="task">
-              <h3 class="task__heading">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                eius culpa error dolores commodi perspiciatis corporis.
-              </h3>
-              <label class="task__checkbox">
-                <input
-                  class="task__inputCheckbox"
-                  type="checkbox"
-                  name="taskSuccess"
-                />
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+        </main>
 
-    <script src="js/main.js"></script>
-  </body>
+        <script src="js/main.js"></script>
+    </body>
 </html>
