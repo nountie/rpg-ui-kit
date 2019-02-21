@@ -3,7 +3,7 @@
   let tilemap = {};
   tilemap.array = Array(9)
     .fill(0)
-    .map(x => Array(12).fill(0));
+    .map(() => Array(12).fill(0));
 
   tilemap.assignTiles = function(blocks) {
     for ([index, block] of blocks.entries()) {
